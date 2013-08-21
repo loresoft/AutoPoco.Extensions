@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3484F533-E66D-429C-8988-C5CEC520B19D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoPoco</RootNamespace>
+    <AssemblyName>AutoPoco.Extensions</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoPoco">
+      <HintPath>..\packages\AutoPocoBeta.1.2.0\lib\AutoPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConventionExtensions.cs" />
+    <Compile Include="Conventions\BooleanPropertyConvention.cs" />
+    <Compile Include="Conventions\CityPropertyConvention.cs" />
+    <Compile Include="Conventions\CompanyPropertyConvention.cs" />
+    <Compile Include="Conventions\DateTimePropertyConvention.cs" />
+    <Compile Include="Conventions\DecimalPropertyConvention.cs" />
+    <Compile Include="Conventions\DoublePropertyConvention.cs" />
+    <Compile Include="Conventions\EmailPropertyConvention.cs" />
+    <Compile Include="Conventions\FloatPropertyConvention.cs" />
+    <Compile Include="Conventions\GuidPropertyConvention.cs" />
+    <Compile Include="Conventions\IntegerPropertyConvention.cs" />
+    <Compile Include="Conventions\PasswordPropertyConvention.cs" />
+    <Compile Include="Conventions\PhonePropertyConvention.cs" />
+    <Compile Include="Conventions\PostalCodePropertyConvention.cs" />
+    <Compile Include="Conventions\StatePropertyConvention.cs" />
+    <Compile Include="Conventions\StreetPropertyConvention.cs" />
+    <Compile Include="Conventions\WebsitePropertyConvention.cs" />
+    <Compile Include="DataSources\BooleanSource.cs" />
+    <Compile Include="DataSources\CitySource.cs" />
+    <Compile Include="DataSources\CompanySource.cs" />
+    <Compile Include="DataSources\DateTimeSource.cs" />
+    <Compile Include="DataSources\DecimalSource.cs" />
+    <Compile Include="DataSources\DoubleSource.cs" />
+    <Compile Include="DataSources\EnumSource.cs" />
+    <Compile Include="DataSources\EmailSource.cs" />
+    <Compile Include="DataSources\FloatSource.cs" />
+    <Compile Include="DataSources\IntegerSource.cs" />
+    <Compile Include="DataSources\PasswordSource.cs" />
+    <Compile Include="DataSources\PostalCodeSource.cs" />
+    <Compile Include="DataSources\StreetSource.cs" />
+    <Compile Include="DataSources\TimeSpanSource.cs" />
+    <Compile Include="DataSources\WebsiteSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AutoPoco.Extensions</id>
+    <version>1.0.0.0</version>
+    <authors>LoreSoft</authors>
+    <owners>LoreSoft</owners>
+    <licenseUrl>https://github.com/loresoft/AutoPoco.Extensions</licenseUrl>
+    <projectUrl>https://github.com/loresoft/AutoPoco.Extensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Additional conventions and data sources for AutoPoco.</description>
+    <summary>Additional conventions and data sources for AutoPoco.</summary>
+    <copyright>Copyright (c) 2013, LoreSoft</copyright>
+    <language>en-US</language>
+    <tags>AutoPoco Test</tags>
+    <dependencies>
+      <dependency id="AutoPocoBeta" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="readme.md" target="tools\readme.md" />
+    <file src="Source\AutoPoco.Extensions\bin\Release\AutoPoco.Extensions.*" target="lib\" />
+  </files>
+</package>

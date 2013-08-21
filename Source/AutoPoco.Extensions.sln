@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoPoco.Extensions", "AutoPoco.Extensions\AutoPoco.Extensions.csproj", "{3484F533-E66D-429C-8988-C5CEC520B19D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0C2ABE7A-948E-4F7A-8BB5-DE3CC1A2452D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoPoco.Extensions.Tests", "AutoPoco.Extensions.Tests\AutoPoco.Extensions.Tests.csproj", "{D1C00764-18E0-45C9-BBF3-16C91EA389C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A7950586-72D0-47D4-AC93-61C74FDCA8A4}"
+	ProjectSection(SolutionItems) = preProject
+		..\AutoPoco.Extensions.nuspec = ..\AutoPoco.Extensions.nuspec
+		..\Master.proj = ..\Master.proj
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3484F533-E66D-429C-8988-C5CEC520B19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3484F533-E66D-429C-8988-C5CEC520B19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3484F533-E66D-429C-8988-C5CEC520B19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3484F533-E66D-429C-8988-C5CEC520B19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C00764-18E0-45C9-BBF3-16C91EA389C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C00764-18E0-45C9-BBF3-16C91EA389C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C00764-18E0-45C9-BBF3-16C91EA389C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C00764-18E0-45C9-BBF3-16C91EA389C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
